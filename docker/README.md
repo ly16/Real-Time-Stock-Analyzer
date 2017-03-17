@@ -1,4 +1,5 @@
-# Docker环境配置相关脚本
+# Docker env
+
 
 ## 代码结构
 
@@ -6,15 +7,19 @@
 
 ## MacOS, *nix系统
 
-1. 创建一个docker-machine虚拟机, 2个CPU, 2G的内存
+1. Get the env for docker-machine, 2CPU, 2G
 ```sh
 docker-machine create --driver virtualbox --virtualbox-cpu-count 2 --virtualbox-memory 2048 bigdata
 ```
-2. 运行脚本来启动所有相关的docker容器 (Kafka, Cassandra, Zookeeper)
+
+Docker-machine ip bigdata
+
+eval $(docker-machine env bigdata)
+
+
+2. Run all of the docker containers (Kafka, Cassandra, Zookeeper,redis)
+
 ```sh
 ./local-setup.sh bigdata
 ```
 
-## Windows系统
-
-TODO
