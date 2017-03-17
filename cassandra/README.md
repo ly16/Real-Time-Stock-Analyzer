@@ -1,12 +1,12 @@
 # Cassandra 
 ## What is Cassandra?
--An open source distributed storage system that provides
+- An open source distributed storage system that provides
 
--Manage massive amounts of data, fast, without losing sleep
+- Manage massive amounts of data, fast, without losing sleep
 
--High availability
+- High availability
 
--No single point of failure
+- No single point of failure
 
 ## data-storage.py
 The code for data storage in Cassandra
