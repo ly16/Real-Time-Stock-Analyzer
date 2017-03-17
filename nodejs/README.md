@@ -1,9 +1,9 @@
 ## What is Node.js?
--Open source platform for service-side web applications
+- Open source platform for service-side web applications
 
--Event-driven architecture
+- Event-driven architecture
 
--Async IO
+- Async IO
 
 
 ## index.js
