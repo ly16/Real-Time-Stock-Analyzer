@@ -1,11 +1,9 @@
 # Docker env
+- eval $(docker-machine env bigdata)
 
+- local-setup.sh for starting Kakfa, Cassandra, Zookeeper containers
 
-## 代码结构
-
-1. local-setup.sh 快速部署单节点Kakfa, Cassandra, Zookeeper开发环境
-
-## MacOS, *nix系统
+## For MacOS
 
 1. Get the env for docker-machine, 2CPU, 2G
 ```sh
