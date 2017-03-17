@@ -5,6 +5,7 @@
 - In memory computing
 
 ## stream-process.py
+Spark reads data from kafka or Cassandra, computes and then writes back to kafka.
 
 ### Reference
 pyspark         http://spark.apache.org/docs/latest/api/python/
