@@ -20,6 +20,13 @@ minimist        https://www.npmjs.com/package/minimist
 
 ```sh
 npm install
+node -v
+npm -v
+npm install socket.io --save
+npm install express --save
+npm install minimist --save
+npm install smoothie --save
+ 
 ```
 
 ### Command Line
