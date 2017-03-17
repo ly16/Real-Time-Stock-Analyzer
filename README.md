@@ -11,11 +11,34 @@ Here is my project about real time stock price visualization by using bigdata pi
 - Spark gets data from Kafka, computes the avaerage value (or other computational processes) and writes back to Kafka
 - Kafka sends processed to Redis cache 
 - Redis publishes received data to Node.js
-- Front end realizes the visualization
-![picture1](https://github.com/ly16/real-time-stock-analyzer/blob/master/results/P5.png)
+- Front end realizes the visualization, and updates front end as data comes in
+![P5](https://github.com/ly16/real-time-stock-analyzer/blob/master/results/P5.png)
 
 ## Command Line
-** Set the Docker Eve and run the follow command
+* Set the Docker Eve and run the follow command
 
+* Fetch multiple stock data by flask-data-producer.py
+```
+export ENV_CONFIG_FILE=`pwd`/config/dev.cfg
+python flask-data-producer.py
+```
+* Under spark env using spark-submit to do data process 
+```
+spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.0.0.jar stream-processing.py stock-analyzer average-stock-price 192.168.99.100:9092
+```
+* Use redis to publish data 
+```
+python redis-publisher.py average-stock-price 192.168.99.100:9092 average-stock-price 192.168.99.100 6379
+```
+* Start the webserver at localhost:3000
+```
+node index.js --port=3000 --redis_host=192.168.99.102 --redis_port=6379 --subscribe_topic=average-stock-price
+```
+* Add the stock brand you like to see the results
+![aapl](https://github.com/ly16/real-time-stock-analyzer/blob/master/results/aapl.png)
+![amzn](https://github.com/ly16/real-time-stock-analyzer/blob/master/results/amzn.png)
+![goog](https://github.com/ly16/real-time-stock-analyzer/blob/master/results/goog.png)
 
-
+* command line screen shots
+![docker1](https://github.com/ly16/real-time-stock-analyzer/blob/master/results/docker1.png)
+![docker2](https://github.com/ly16/real-time-stock-analyzer/blob/master/results/docker2.png)
