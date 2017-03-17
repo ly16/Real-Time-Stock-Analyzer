@@ -9,11 +9,11 @@
 ```sh
 docker-machine create --driver virtualbox --virtualbox-cpu-count 2 --virtualbox-memory 2048 bigdata
 ```
-
+```
 Docker-machine ip bigdata
 
 eval $(docker-machine env bigdata)
-
+```
 
 2. Run all of the docker containers (Kafka, Cassandra, Zookeeper,redis)
 
