@@ -1,0 +1,1 @@
+output "zookeeper_public_ips" { value = ["${aws_instance.zookeeper.*.public_ip}}"] }
