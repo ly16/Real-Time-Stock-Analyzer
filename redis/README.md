@@ -1,8 +1,8 @@
-# Redis
+## What is Redis?
 
-Open source in-memory data structure store
+- Open source in-memory data structure store
 
-Database, Cache, Message Queue
+- Database, Cache, Message Queue
 
 ## redis-producer.py
 
