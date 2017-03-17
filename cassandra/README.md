@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ### Command Line
 Assume Cassandra is run in a docker-machine called bigdata, with ip: 192.168.99.100
 
-###create keyspace and table by cqlsh
+### create keyspace and table by cqlsh
 ```sh
 CREATE KEYSPACE "stock" WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1} AND durable_writes = 'true';
 USE stock;
