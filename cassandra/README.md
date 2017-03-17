@@ -1,5 +1,5 @@
 # Cassandra 
-##What is Cassandra?
+## What is Cassandra?
 An open source distributed storage system that provides
 
 Manage massive amounts of data, fast, without losing sleep
