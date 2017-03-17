@@ -114,7 +114,7 @@ KeyboardInterrupt
 2017-02-03 21:24:25,509 Cassandra Session closed
 2017-02-03 21:24:25,509 Existing program
 ```
-##Check in table##
+## Check in table
 ./cqlsh `docker-machine ip bigdata` 9042 Connected to Test Cluster at 192.168.99.101:9042
 ```
 [cqlsh 5.0.1 | Cassandra 3.7 | CQL spec 3.4.2 | Native protocol v4]
