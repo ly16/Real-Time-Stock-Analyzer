@@ -1,4 +1,8 @@
-# Spark相关的代码
+## What is Spark?
+- Open source cluster computing framework
+- Respond to limitations of Apache Hadoop
+- Computation optimization
+- In memory computing
 
 ## stream-process.py
 
