@@ -8,7 +8,7 @@ Here is my project about real time stock price visualization by using bigdata pi
 - Get client requests from HTML front end
 - Kafka starts to Fetch data from google finance and transports data to frameworks
 - Kafka Store data to cassandra (optional)
-- Spark gets data from Kafka, computes the avaerage value (or other computational processes) and writes back to Kafka
+- Spark gets data from Kafka, computes the average value (or other computational processes) and writes back to Kafka
 - Kafka sends processed to Redis cache 
 - Redis publishes received data to Node.js
 - Front end realizes the visualization, and updates front end as data comes in
